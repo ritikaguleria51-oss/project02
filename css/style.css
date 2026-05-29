@@ -822,3 +822,92 @@ section.project-banner{
 section.project-images {
     margin: 50px 0;
 }
+section.service-banner{
+    background-image: url(../images/2\ \(2\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+}
+.main-cyber-threats {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.second-row {
+    background-image: url(../images/s1\ \(3\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 400px;
+    border-radius: 8px;
+    position: relative;
+}
+section.cyber-threats {
+    margin: 50px  0;
+}
+.first-row ul {
+    padding: 0;
+}
+
+.first-row li {
+    list-style: none;
+    font-size: 20px;
+    line-height: 35px;
+    background: #F3F3F4;
+    margin-bottom: 12px;
+    padding: 10px 55px;
+    border-radius: 10px;
+}
+
+.\33 rd-row h3 {
+    font-size: 40px;
+    margin: 0;
+}
+.\33 rd-row p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.second-row p {
+    width: 70%;
+    background: linear-gradient( 45deg, #4a81d3, #514A9D);
+    position: absolute;
+    bottom: -18px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+}
+.\33 -features {
+    display: flex;
+    gap: 20px;
+    padding-left: 28%;
+}
+.icon-boxes02 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+section.key-features {
+    margin: 60px 0;
+}
+.check-icon i {
+    border: 1px solid;
+    padding: 22px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.icon-content h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.all-last-testimonial {
+    display: flex;
+    gap: 20px;
+    padding-left: 28%;
+}
+section.last-testimonial {
+    margin-bottom: 60px;
+}
