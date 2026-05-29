@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 .nav-bar ul {
     display: flex;
@@ -217,9 +217,9 @@ section.marquee-sec {
     background: #4a81d3;
 }
 .content {
-    font-size: 55px;
+    font-size: 50px;
     color: white;
-    padding-top: 14px;
+    padding-top: 16px;
 }
 section.services {
     padding: 80px 0;
@@ -409,6 +409,7 @@ section.realstudy {
     padding: 60px 0;
     background: #12132c;
     color: white;
+    margin-bottom: 60px;
 }
 .main-study span {
     color: #4a81d3;
