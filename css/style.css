@@ -52,7 +52,7 @@ section.banner {
 }
 header {
     position: absolute;
-    z-index: 1;
+    z-index: 9;
     width: 100%;
     left: 0;
     background: rgb(18 19 44 / 50%);
@@ -158,6 +158,7 @@ header {
 .img-secc {
     width: 50%;
     position: relative;
+    transition: transform 0.5s ease;
 }
 .request-btn a {
     background: #4a81d3;
@@ -183,6 +184,7 @@ section.cyber-security {
 .main-cs h2 {
     font-size: 47px;
     font-weight: 800;
+    margin: 10px 0 0 0;
 }
 .main-cs {
     margin-bottom: 35px;
@@ -240,6 +242,7 @@ section.services {
     display: grid;
     grid-template-columns: repeat(3,3fr);
 }
+
 .mainn-services {
     text-align: center;
 }
@@ -656,12 +659,13 @@ section.expert-info {
     margin: 5px 0;
     font-size: 22px;
 }
-.bg-img{
+.bg-img {
     background-image: url(../images/s4.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 500px;
+    border-radius: 10px;
 }
 .exper-security-sec {
     display: flex;
@@ -770,11 +774,11 @@ section.message {
 }
 .ist-side11 h3 {
     font-size: 40px;
-    margin: 0;
+    margin: 14px 0;
 }
 
 .ist-side11 p {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 25px;
     margin-bottom: 20px;
 }
@@ -784,6 +788,7 @@ section.message {
     height: 44px;
     margin-bottom: 10px;
     border-radius: 10px;
+    border: 1px solid #ddd;
 }
 
 .img-location {
@@ -795,10 +800,21 @@ section.message {
     background-size: cover;
     width: 52%;
     height: 300px;
+    border-radius: 10px;
+}
+.overview-heading {
+    width: 100%;
+}
+.img-secc:hover {
+    transform: scale(1.1);
+}
+.overview-heading h2 {
+    font-size: 30px;
 }
 .locationss {
     background: #F3F3F4;
     padding: 30px;
+    border-radius: 10px;
 }
 .send-msg-btn a {
     background: #4a81d3;
@@ -890,7 +906,7 @@ section.cyber-threats {
 .\33 -features {
     display: flex;
     gap: 20px;
-    padding-left: 28%;
+    padding-left: 27%;
 }
 .icon-boxes02 {
     display: flex;
@@ -913,7 +929,7 @@ section.key-features {
 .all-last-testimonial {
     display: flex;
     gap: 20px;
-    padding-left: 28%;
+    padding-left: 27%;
 }
 section.last-testimonial {
     margin-bottom: 60px;
@@ -1133,3 +1149,5 @@ section.banner234 {
     display: flex;
     gap: 20px;
 }
+
+
