@@ -30,6 +30,10 @@ body {
     padding: 10px 15px;
     border-radius: 10px;
 }
+section.banner .container {
+    position: relative;
+    z-index: 9;
+}
 .button2 a {
     text-decoration: none;
     background: #4a81d3;
@@ -52,7 +56,7 @@ section.banner {
 }
 header {
     position: absolute;
-    z-index: 9;
+    z-index: 99;
     width: 100%;
     left: 0;
     background: rgb(18 19 44 / 50%);
@@ -63,7 +67,7 @@ header {
 }
 .main-banner {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 140px;
     color: white;
     position: relative;
 }
@@ -82,9 +86,9 @@ header {
 }
 .protected-btn a {
     text-decoration: none;
-    border: 1px solid blue;
+    border: 1px solid #4a81d3;
     color: white;
-    background: blue;
+    background: #4a81d3;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 18px;
@@ -99,9 +103,11 @@ header {
 }
 .icn-cnt h3 {
     font-size: 25px;
+    margin: 0 0 15px 0;
 }
 .icn-cnt p {
     font-size: 18px;
+    line-height: 30px;
 }
 .icon-box-01 {
     display: flex;
@@ -115,8 +121,20 @@ header {
     width: 200px;
     height: 200px;
 } */
- section.Timing {
-    background-color: #222e66;
+section.Timing {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #4a81d3, #514A9D);
+}
+.timing-bg img {
+    background: none;
+    position: absolute;
+    transform: translateY(-50%);
+    opacity: .1;
+    width: 23%;
+    top: 52%;
+    right: 20px;
+    padding: 0;
 }
 .one-cnt h2 {
     margin: 0;
@@ -131,7 +149,8 @@ header {
 }
 .security-lists li {
     list-style: none;
-    line-height: 25px;
+    line-height: 30px;
+    font-weight: 500;
 }
 .security-lists ul {
     padding: 0;
@@ -169,8 +188,8 @@ header {
     font-size: 18px;
 }
 .cnt-secc p {
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 27px;
 }
 .request-btn {
     margin-top: 30px;
@@ -182,8 +201,8 @@ section.cyber-security {
     text-align: center;
 }
 .main-cs h2 {
-    font-size: 47px;
-    font-weight: 800;
+    font-size: 44px;
+    font-weight: 500;
     margin: 10px 0 0 0;
 }
 .main-cs {
@@ -191,7 +210,7 @@ section.cyber-security {
 }
 .main-cs span {
     color: #4a81d3;
-    font-size: 20px;
+    font-size: 18px;
 }
 .security-lists i {
     color: #4a81d3;
@@ -203,7 +222,7 @@ section.cyber-security {
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 100px;
+    height: 85px;
     overflow-x: hidden;
 }
 .track {
@@ -222,9 +241,9 @@ section.marquee-sec {
     background: #4a81d3;
 }
 .content {
-    font-size: 50px;
+    font-size: 35px;
     color: white;
-    padding-top: 16px;
+    padding-top: 22px;
 }
 section.services {
     padding: 80px 0;
@@ -252,7 +271,7 @@ section.services {
     color: white;
 }
 .box01 {
-    background: #273a56;
+    background: linear-gradient(0deg, #222e66 0%, #191b36 100%);
     margin: 0 18px 18px 0;
     padding: 20px;
     border-radius: 10px;
@@ -269,8 +288,8 @@ section.services {
 }
 .box01 p {
     margin: 15px 0 28px 0;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 27px;
 }
 .box01 h3 {
     font-size: 22px;
@@ -278,8 +297,8 @@ section.services {
 }
 .mainn-services p {
     margin-bottom: 40px;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 27px;
 }
 .mainn-services span {
     color: #4a81d3;
@@ -302,6 +321,7 @@ section.choose-us {
 
 .ist-side {
     display: flex;
+    width: 50%;
 }
 
 .two-sides-main {
@@ -355,8 +375,9 @@ section.record {
 
 .expert-img img {
     width: 100%;
+    position: relative;
+    bottom: -3px;
 }
-
 .main-expert {
     display: flex;
     justify-content: center;
@@ -369,13 +390,12 @@ section.record {
 }
 
 .expert-cnt h3 {
-    font-size: 48px;
+    font-size: 46px;
     margin: 20px 0;
 }
-
 .expert-cnt p {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 27px;
 }
 .consultation-btn a {
     text-decoration: none;
@@ -441,11 +461,12 @@ section.testimonials {
 
 .main-testimonials span {
     color: #4a81d3;
-    font-size: 18px;
+    font-size: 14px;
 }
 .main-testimonials h3 {
     font-size: 48px;
     margin: 10px 0;
+    font-weight: 600;
 }
 
 .main-testimonials {
@@ -460,6 +481,8 @@ section.testimonials {
     display: flex;
     align-items: center;
     gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
 .all-testimonials {
     display: flex;
@@ -542,6 +565,7 @@ section.footer {
 .w-c-u p {
     font-size: 18px;
     margin: 15px 0 0 0;
+    line-height: 30px;
 }
 .mainn-services h2 {
     font-size: 48px;
@@ -578,6 +602,7 @@ section.about-banner{
 .right-about {
     display: flex;
     gap: 20px;
+    position: relative;
 }
 
 section.about {
@@ -781,6 +806,7 @@ section.message {
     font-size: 17px;
     line-height: 25px;
     margin-bottom: 20px;
+    color: #797a8c;
 }
 
 .inputss-02 input {
@@ -789,6 +815,7 @@ section.message {
     margin-bottom: 10px;
     border-radius: 10px;
     border: 1px solid #ddd;
+    padding: 10px;
 }
 
 .img-location {
@@ -996,7 +1023,7 @@ section.overview {
 .card h2 {
     font-size: 35px;
     font-weight: 600;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .item{
@@ -1149,5 +1176,90 @@ section.banner234 {
     display: flex;
     gap: 20px;
 }
+.main-last h3 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+.testimonial01 p {
+    line-height: 27px;
+    font-size: 17px;
+}
+.ist-side span {
+    position: absolute;
+    right: 260px;
+    top: 14px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.ist-side {
+    position: relative;
+}
+.percentage {
+    position: absolute;
+    background: linear-gradient(45deg, #4a81d3, #514A9D);
+    width: 30%;
+    padding: 20px 10px;
+    font-size: 16px;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    top: 184px;
+    left: 38px;
+}
+.percentage span {
+    font-size: 32px;
+    font-weight: 600;
+}
+.hover-area {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+    transition: .8s;
+    background: linear-gradient(45deg, #4a81d3, #514A9D);
+}
 
-
+.image-01:hover .hover-area {
+    opacity: 1;
+    visibility: visible;
+}
+.hover-area a {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.google-logo img {
+    width: 40px;
+}
+.hover-area p {
+    transition: 1s all;
+    margin-top: 80px;
+}
+.image-01:hover .hover-area p {
+    transform: skewX(10deg);
+}
+.image-01:hover .hover-area p {
+    margin: 0px;
+}
+.experience {
+    position: absolute;
+    background: white;
+    text-align: center;
+    top: 36%;
+    left: 33%;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.experience span {
+    font-size: 60px;
+    font-weight: 600;
+}
